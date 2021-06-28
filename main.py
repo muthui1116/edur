@@ -161,6 +161,9 @@ def about():
     return render_template("about.html", current_user=current_user)
 
 
+@app.route('/reg')
+def reg_page():
+    return render_template('reg.html')
 @app.route("/contact")
 def contact():
     return render_template("contact.html", current_user=current_user)
